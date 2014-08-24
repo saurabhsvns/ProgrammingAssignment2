@@ -1,5 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
+## The logic of below program is use of lexical scope and solve function to calculate the inverse. 
+## This function will creat a "matrix" object that can cache its inverse. The object does calculate inverse 
+## but saves the matrix to variable x and its inverse to variable "inverse" in scope.
+## Returns an object of type list with below methods:
+## set: sets matrix and resets cached inverse
+## get: returns matrix
+## setInverse: saves solve value
+## getInverse: returns cached inverse value
 
 ## Write a short comment describing this function
 
@@ -24,7 +30,8 @@ inverse <- NULL
 }
 
 
-## Write a short comment describing this function
+## This function will check if the inverse of matrix exist then return that otherwise
+## call the above function to calculate the same
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
